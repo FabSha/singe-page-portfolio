@@ -1,0 +1,16 @@
+.about-grid {
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.a-item-one {
+    background-color: aqua;
+}
+
+.a-item-two {
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
