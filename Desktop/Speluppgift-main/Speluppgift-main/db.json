@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "email": "fabiansha@gmail.com",
+      "username": "hej",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "fabiansha@gmail.com",
+      "username": "fabian",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "fabiansha@gmail.com",
+      "username": "ett",
+      "password": "1",
+      "id": 5
+    },
+    {
+      "email": "fabiansha@gmail.com",
+      "username": "111",
+      "password": "111",
+      "id": 6
+    },
+    {
+      "email": "fabiansha@gmail.com",
+      "username": "1111",
+      "password": "1111",
+      "id": 7
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 8
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "email": "isakthorstrom@yahoo.se",
+      "username": "isse",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 11
+    }
+  ]
+}

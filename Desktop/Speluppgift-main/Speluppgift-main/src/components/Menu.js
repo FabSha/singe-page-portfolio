@@ -1,11 +1,17 @@
+import { useNavigate } from "react-router-dom"
 const Menu = () => {
-    return(
-        <div>
-            <h1>Escape the woods</h1>
-            <li>
-            <button className="play-btn" onClick="clickplay">Play</button>
-            </li>
-            <button className="logout-btn" onClick="logout">Log out</button>
+
+    const navigate = useNavigate()
+
+    return (
+        <div className="overlay">
+            <div className="menu-card">
+                <h1 className="titel-name">Escape the woods</h1>
+                <button className="play-btn" onClick={() => { navigate("/Story") }}>Play</button>
+                <button className="logout-btn" onClick={() => { navigate("/") }}>Log out</button>
+                <button className="exit-btn1" onClick="self.close()">Exit</button>
+
+            </div>
         </div>
     )
 }

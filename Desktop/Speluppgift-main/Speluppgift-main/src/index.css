@@ -1,13 +1,378 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.titel-name {
+  font-size: 80px;
+  font-family: Copperplate Gothic Light;
+  margin-top: 50px;
+  text-align: center
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.overlay {
+  background-image: url(../src/Data/ghostly-forest.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.menu-card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #5C5566;
+  margin: auto;
+  height: 800px;
+  width: 70%;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+
+.form {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #76878B;
+  height: 250px;
+  width: 40%;
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 20px;
+}
+
+
+.form1 {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #76878B;
+  height: 200px;
+  width: 40%;
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 20px;
+}
+
+
+.form-control {
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 10px;
+}
+
+
+input[type=text] {
+  width: 50%;
+}
+
+
+input[type=email] {
+  width: 50%;
+}
+
+
+input[type=password] {
+  width: 50%;
+}
+
+
+.register-btn1 {
+  color: white;
+  background-color: #332932;
+  font-family: "Consolas";
+  font-size: 20px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+
+.login-btn {
+  color: white;
+  background-color: #332932;
+  font-family: "Consolas";
+  font-size: 20px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+
+.register-btn2 {
+  color: white;
+  background-color: #497890;
+  font-family: "Consolas";
+  font-size: 20px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: groove;
+  border-color: black;
+  margin-top: 15px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.exit-btn1 {
+  color: white;
+  background-color: #332932;
+  font-family: "Consolas";
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.play-btn {
+  color: white;
+  background-color: red;
+  font-family: "Consolas";
+  font-size: 80px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+
+.logout-btn {
+  color: white;
+  background-color: #497890;
+  font-family: "Consolas";
+  font-size: 20px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+
+
+.story-card {
+  font-family: "Consolas";
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: rgb(18, 14, 14);
+  width: 50%;
+  height: 60%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+
+.story-page {
+  background-image: url(../src/Data/scary-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+
+.next-btn {
+  font-size: 20px;
+  color: white;
+  background-color: #4a484a;
+  font-family: "Consolas";
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+}
+
+
+.death {
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+
+.overlay-death1 {
+  background-image: url(../src/Data/Troll.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.overlay-death2 {
+  background-image: url(../src/Data/Fall.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.overlay-death3 {
+  background-image: url(../src/Data/Wolf.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.overlay-death4 {
+  background-image: url(../src/Data/Lumber.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.overlay-death5 {
+  background-image: url(../src/Data/Ghost.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.menu-card-goal {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #76878B;
+  margin: auto;
+  opacity: 60%;
+  height: 394px;
+  width: 396px;
+  border-radius: 10px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+.playagain-death {
+  font-family: "Consolas";
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  background-color: #8CB3BC;
+  color: rgb(0, 0, 0);
+}
+
+
+.exit-death {
+  color: rgb(0, 0, 0);
+  background-color: #8CB3BC;
+  font-family: "Consolas";
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.game-over {
+  color: rgb(0, 0, 0);
+  font-family: "Consolas";
+  font-size: 32px;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

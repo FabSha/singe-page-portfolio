@@ -1,0 +1,9 @@
+import { authenticate } from "../help/Help"
+import { Navigate } from "react-router-dom"
+
+const PrivateRoute = ({ children }) => {
+    const auth = authenticate()
+    return auth ? children : <Navigate to="/" />
+}
+
+export default PrivateRoute
